@@ -1,0 +1,41 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eroom-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/eroom
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 1234
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.9
+    container_name: eroom-db
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: eroom
+    volumes:
+      - db-data:/var/lib/mysql
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: eroom-ngrok
+    restart: unless-stopped
+    ports:
+      - "4040:4040"
+    environment:
+      NGROK_AUTHTOKEN: "2tVen5h9eLjIaUey5wvrK0PuBb7_4shk9dp3f9ibktsgj2Wa6"
+    command:
+      - http
+      - --log=stdout
+      - host.docker.internal:8080
+
+volumes:
+  db-data:
