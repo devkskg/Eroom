@@ -9,7 +9,7 @@
 - GitHub: [https://github.com/devkskg/Eroom](https://github.com/devkskg/Eroom)
 - 요구사항 정의서 : [Eroom_요구사항_정의서](https://docs.google.com/spreadsheets/d/1FnjUiZ47b5gXDKNCxk-6f5R7QsUl4JaYwkxmnsJ0pGQ/edit?usp=sharing)
 - 화면 설계서 : [Eroom_화면_설계서](https://www.figma.com/design/ZrAUIhsFwkzimaTK8K3gLM/%EA%B7%B8%EB%A3%B9%EC%9B%A8%EC%96%B4-Eroom-_%ED%99%94%EB%A9%B4%EC%A0%95%EC%9D%98%EC%84%9C?node-id=0-1&t=XkQXaov4YeZu58OZ-1)
-- 테이블 정의서 : [Eroom_테이블_정의서]([https://docs.google.com/spreadsheets/d/1q5LjIvu9inH75tKSUmEjuYY-0p3ne0m57-tAbesTU2s/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1i73eiJoRsjeHjq9QGhgr64stYZC7STOOYxxJWaY-3YE/edit?usp=sharing))
+- 테이블 정의서 : [Eroom_테이블_정의서](https://docs.google.com/spreadsheets/d/1i73eiJoRsjeHjq9QGhgr64stYZC7STOOYxxJWaY-3YE/edit?usp=sharing)
 
 ---
 
