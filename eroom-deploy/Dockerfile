@@ -2,7 +2,7 @@
 FROM openjdk:17
 
 # JAR 파일 이름을 외부에서 전달받을 수 있도록 설정
-ARG JAR_FILE=build/libs/eroom-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=eroom-deploy/build/libs/eroom-0.0.1-SNAPSHOT.jar
 
 # JAR 파일을 이미지 내부로 복사
 COPY ${JAR_FILE} app.jar
