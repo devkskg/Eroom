@@ -37,6 +37,7 @@ services:
     command:
       - http
       - --log=stdout
+      - --scheme=http # ngrok이 wss 요청을 ws로 다운그레이드해서 처리하게 설정, Spring Boot는 SSL 없이 http만 지원해도 연결 가능
       - eroom-app:8080 # 기존의 host.docker.internal:8080를 Docker 네트워크 안의 eroom-app을 바라보도록 수정 (Docker 네트워크 내 eroom-app 컨테이너로 직접 연결)
 
   ngrok-jenkins:
