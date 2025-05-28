@@ -431,10 +431,10 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.5/dist/signature_pad.umd.min.js"></script>
 	<!-- 결재 등록시 header에 있는 종에 빨간점 표시 -->
 	<script>
-    console.log('결재 웹소켓 확인용 콘솔11')
+    console.log('결재 웹소켓 확인용 콘솔111')
 	document.addEventListener('DOMContentLoaded', function () {
 	    const ApprovalemployeeNo = document.getElementById("myEmployeeNo")?.value;
-	    console.log('결재 웹소켓 확인용 콘솔22')
+	    console.log('결재 웹소켓 확인용 콘솔222')
     	console.log("🔥 WebSocket 연결 URL: ", '/ws/approval?employeeNo=' + ApprovalemployeeNo);
     	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + ApprovalemployeeNo);
 	      approvalSocket.onopen = function() { console.log('결재 웹소켓 연결 성공!'); };
