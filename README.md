@@ -4,13 +4,23 @@
 총 **14개의 통합 메뉴 + 로그인 시스템 + 관리자 기능**을 제공합니다.
 
 ---
+## 🚀 배포 주소
 
+- **Eroom 그룹웨어**: [https://0422-61-83-250-225.ngrok-free.app](https://0422-61-83-250-225.ngrok-free.app)  
+- **접속 가능 시간**: 매일 10:00 ~ 18:00 (ngrok 주소 주기적 변경됨)
+
+---
+
+## 👤 테스트 계정 안내
+
+| 역할 | 아이디 | 비밀번호 | 소속 / 용도 |
+|------|--------|-----------|------------------------------|
+| 일반 사용자 계정(강성관) | `00000050` | `20250527` | 기술부 – 개발팀 (결재/주소록/챗봇 테스트) |
+| 일반 사용자 계정(구초콩) | `00000049` | `20250527` | 운영부 – 인사팀 (결재/주소록/챗봇 테스트) |
+| 관리자 계정   | `admin`    | `1234`     | 운영부 – 인사팀 (조직 관리 테스트) |
+
+---
 ## 🔗 프로젝트 링크  
-- 배포 : [Eroom그룹웨어](https://0422-61-83-250-225.ngrok-free.app)
-- 매일 10:00 ~ 18:00 새로운 url로 공유중.
--   (id : 00000050 / pw : 20250527) - 결재, 주소록 기능 test
--   (id : 00000049 / pw : 20250527) - 결재, 주소록 기능 test
--   (id : admin / pw : 1234) - 주소록 부서/팀 이동,삭제,추가 test
 - GitHub: [https://github.com/devkskg/Eroom](https://github.com/devkskg/Eroom)
 - 요구사항 정의서 : [Eroom_요구사항_정의서](https://docs.google.com/spreadsheets/d/1FnjUiZ47b5gXDKNCxk-6f5R7QsUl4JaYwkxmnsJ0pGQ/edit?usp=sharing)
 - 화면 설계서 : [Eroom_화면_설계서](https://www.figma.com/design/ZrAUIhsFwkzimaTK8K3gLM/%EA%B7%B8%EB%A3%B9%EC%9B%A8%EC%96%B4-Eroom-_%ED%99%94%EB%A9%B4%EC%A0%95%EC%9D%98%EC%84%9C?node-id=0-1&t=XkQXaov4YeZu58OZ-1)
