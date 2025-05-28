@@ -38,6 +38,7 @@ public class WebSecurityConfig {
 			.authorizeHttpRequests(requests -> requests
 //					.anyRequest().permitAll()
 					.requestMatchers("/login", "/assets/**", "/vendors/**").permitAll()
+					.requestMatchers("/ws/**").permitAll() // websocket은 인증 없이 접근 가능
 					.requestMatchers("/admin/**").hasRole("ADMIN") // admin은 필요할 때 주석 해제
 					.anyRequest().authenticated() // 모든 요청에 대한 인증 권한 필요할 때 주석 해제
 					)
