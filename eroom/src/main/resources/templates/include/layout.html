@@ -309,27 +309,6 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 		  }
 		};
 	</script>
-	<!-- 결재 등록시 header에 있는 종에 빨간점 표시 -->
-	<script>
-	document.addEventListener('DOMContentLoaded', function () {
-	    const ApprovalemployeeNo = document.getElementById("myEmployeeNo")?.value;
-    	console.log("🔥 WebSocket 연결 URL: ", '/ws/approval?employeeNo=' + ApprovalemployeeNo);
-    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + ApprovalemployeeNo);
-	      approvalSocket.onopen = function() { console.log('결재 웹소켓 연결 성공!'); };
-	      approvalSocket.onmessage = function(event) { 
-	    	  // alert 보기 싫으면 주석처리
-	    	  // alert(event.data); 
-	    	  // alert 보기 싫으면 주석처리
-			  const notificationDot = document.getElementById('notificationDot');
-			  if (notificationDot) {
-			    notificationDot.style.display = 'block'; // 빨간 점 표시
-			  }
-	    	  
-	      };
-	      approvalSocket.onclose = function() { console.log('결재 웹소켓 연결 종료'); };
-	      approvalSocket.onerror = function(error) { console.error('결재 웹소켓 에러 발생:', error); };
-	});
-	</script>
 	
 	<!-- 회사 캘린더 등록시 header에 있는 종에 빨간점 표시 -->
 	<script>
@@ -450,5 +429,26 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     
    	<!--  SignaturePad 라이브러리 -->
 	<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.5/dist/signature_pad.umd.min.js"></script>
+	<!-- 결재 등록시 header에 있는 종에 빨간점 표시 -->
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+	    const ApprovalemployeeNo = document.getElementById("myEmployeeNo")?.value;
+    	console.log("🔥 WebSocket 연결 URL: ", '/ws/approval?employeeNo=' + ApprovalemployeeNo);
+    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + ApprovalemployeeNo);
+	      approvalSocket.onopen = function() { console.log('결재 웹소켓 연결 성공!'); };
+	      approvalSocket.onmessage = function(event) { 
+	    	  // alert 보기 싫으면 주석처리
+	    	  // alert(event.data); 
+	    	  // alert 보기 싫으면 주석처리
+			  const notificationDot = document.getElementById('notificationDot');
+			  if (notificationDot) {
+			    notificationDot.style.display = 'block'; // 빨간 점 표시
+			  }
+	    	  
+	      };
+	      approvalSocket.onclose = function() { console.log('결재 웹소켓 연결 종료'); };
+	      approvalSocket.onerror = function(error) { console.error('결재 웹소켓 에러 발생:', error); };
+	});
+	</script>
 </body>
 </html>
