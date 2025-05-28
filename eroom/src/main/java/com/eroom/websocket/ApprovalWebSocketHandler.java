@@ -33,17 +33,16 @@ public class ApprovalWebSocketHandler extends TextWebSocketHandler {
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         // 연결될 때 employeeNo 가져오기
 //        Long employeeNo = (Long) session.getAttributes().get("employeeNo");
-//    	String userId = session.getPrincipal().getName();
-    	Object userId = session.getAttributes().get("employeeNo");
-        Employee employee = employeeService.findEmployeeByEmployeeId(userId.toString());
+    	String userId = session.getPrincipal().getName();
+        Employee employee = employeeService.findEmployeeByEmployeeId(userId);
         Long employeeNo = employee.getEmployeeNo();
         
 //        System.out.println("출력 테스트 : " + userId);
         if (employeeNo != null) {
             sessions.put(employeeNo, session);
-            log.info("🔥 [APPROVAL] WebSocket 연결됨 - employeeNo: {}, sessionId: {}", employeeNo, session.getId());
+//            log.info("웹소켓 연결됨: employeeNo={}", employeeNo);
         } else {
-            log.warn("⚠️ [APPROVAL] WebSocket 연결 실패 - employeeNo가 null, sessionId: {}", session.getId());
+//            log.warn("employeeNo가 세션에 없음. 연결 세션ID={}", session.getId());
         }
     }
 

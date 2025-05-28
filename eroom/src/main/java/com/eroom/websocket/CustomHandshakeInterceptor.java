@@ -25,15 +25,12 @@ public class CustomHandshakeInterceptor implements HandshakeInterceptor {
                 if (keyValue.length == 2 && "senderNo".equals(keyValue[0])) {
                     attributes.put("senderNo", keyValue[1]); // 세션에 저장
                 }
-                if (keyValue.length == 2 && "employeeNo".equals(keyValue[0])) {
-                	attributes.put("employeeNo", keyValue[1]);
-                }
             }
             // 현재 연결된 사람의 employeeNo. 로그인한 사람의 사번
-//            String employeeNoStr = servletRequest.getParameter("employeeNo");
-//            if (employeeNoStr != null) {
-//                attributes.put("employeeNo", Long.valueOf(employeeNoStr));
-//            }
+            String employeeNoStr = servletRequest.getParameter("employeeNo");
+            if (employeeNoStr != null) {
+                attributes.put("employeeNo", Long.valueOf(employeeNoStr));
+            }
         }
         return true;
     }
