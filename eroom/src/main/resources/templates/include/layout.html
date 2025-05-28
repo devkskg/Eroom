@@ -311,8 +311,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	</script>
 	<!-- 결재 등록시 header에 있는 종에 빨간점 표시 -->
 	<script>
-    	console.log("🔥 WebSocket 연결 URL: ", '/ws/approval?employeeNo=' + employeeNo);
-    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + employeeNo);
+	    const ApprovalemployeeNo = document.getElementById("myEmployeeNo")?.value;
+    	console.log("🔥 WebSocket 연결 URL: ", '/ws/approval?employeeNo=' + ApprovalemployeeNo);
+    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + ApprovalemployeeNo);
 	      approvalSocket.onopen = function() { console.log('결재 웹소켓 연결 성공!'); };
 	      approvalSocket.onmessage = function(event) { 
 	    	  // alert 보기 싫으면 주석처리
