@@ -24,30 +24,37 @@ public class WebSocketConfig implements WebSocketConfigurer{
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 		registry.addHandler(basicWebSocketHandler, "/ws/basic")
 		        .addInterceptors(new CustomHandshakeInterceptor()) // 핸드쉐이크 인터셉터 추가
-				.setAllowedOrigins("http://localhost:8080");
+				.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//				.setAllowedOrigins("http://localhost:8080");
 		
 		registry.addHandler(chatWebSocketHandler, "/ws/chat")
 				.addInterceptors(new CustomHandshakeInterceptor())
-				.setAllowedOrigins("http://localhost:8080");
+				.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//				.setAllowedOrigins("http://localhost:8080");
 		
 		registry.addHandler(approvalWebSocketHandler, "/ws/approval")
 		.addInterceptors(new CustomHandshakeInterceptor())
-		.setAllowedOrigins("http://localhost:8080");
+		.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//		.setAllowedOrigins("http://localhost:8080");
 		
 		registry.addHandler(companyAlarmSocketHandler, "/ws/company")
         .addInterceptors(new CustomHandshakeInterceptor())
-        .setAllowedOrigins("http://localhost:8080");
+		.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//        .setAllowedOrigins("http://localhost:8080");
 		
 		 registry.addHandler(teamAlarmSocketHandler, "/ws/team")
          .addInterceptors(new CustomHandshakeInterceptor())
-         .setAllowedOrigins("http://localhost:8080");
+			.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//         .setAllowedOrigins("http://localhost:8080");
 		 
 		 registry.addHandler(mailWebSocketHandler, "/ws/mail")
          .addInterceptors(new CustomHandshakeInterceptor())
-         .setAllowedOrigins("http://localhost:8080");
+			.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//         .setAllowedOrigins("http://localhost:8080");
 		 registry.addHandler(mailAlarmWebSocketHandler, "/ws/mail/alarm")
          .addInterceptors(new CustomHandshakeInterceptor())
-         .setAllowedOrigins("http://localhost:8080");
+			.setAllowedOrigins("*"); // ngrok 주소가 계속 바뀌는 문제로 테스트 배포 과정에서는 *로 설정
+//         .setAllowedOrigins("http://localhost:8080");
 		
 	}
 }
