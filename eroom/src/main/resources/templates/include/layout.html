@@ -128,6 +128,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   </head>
 	<body>
 	<main class="main" id="top">
+	
 	<th:block th:replace="~{include/nav :: navLayout}"></th:block>
 	<th:block th:replace="~{include/header :: headerLayout}"></th:block>
 	<div class="content">
@@ -310,7 +311,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	</script>
 	<!-- 결재 등록시 header에 있는 종에 빨간점 표시 -->
 	<script>
-    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval');
+    	const approvalSocket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/approval?employeeNo=' + employeeNo);
 
 	      approvalSocket.onopen = function() { console.log('결재 웹소켓 연결 성공!'); };
 	      approvalSocket.onmessage = function(event) { 
