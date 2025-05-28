@@ -33,7 +33,7 @@ services:
     ports:
       - "4040:4040"  # ngrok 대시보드용 포트
     environment:
-      NGROK_AUTHTOKEN: "2tVen5h9eLjIaUey5wvrK0PuBb7_4shk9dp3f9ibktsgj2Wa6"
+      NGROK_AUTHTOKEN: "ngrok토큰"
     command:
       - http
       - --log=stdout
@@ -47,7 +47,7 @@ services:
     ports:
       - "4041:4040"  # 두 번째 ngrok 대시보드
     environment:
-      NGROK_AUTHTOKEN: "2tVen5h9eLjIaUey5wvrK0PuBb7_4shk9dp3f9ibktsgj2Wa6"
+      NGROK_AUTHTOKEN: "ngrok토큰"
     command:
       - http
       - --log=stdout
