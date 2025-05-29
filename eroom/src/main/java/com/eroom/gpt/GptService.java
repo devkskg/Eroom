@@ -61,6 +61,7 @@ public class GptService {
                 전자결재 기능으로, 문서를 상신하고 결재자의 승인 절차를 따릅니다.<br>
                 기안자는 양식을 선택하고 내용을 작성한 뒤 결재 라인을 설정합니다.<br>
                 합의자와 결재자는 알림을 통해 요청을 확인하고 승인 또는 반려할 수 있으며, 결재 결과도 검색과 필터를 통해 확인 가능합니다.<br>
+                결재 양식으로는 (경조금 신청서, 법인카드사용 신청서, 시말서, 연장근무 신청서, 재직증명서, 출장 보고서, 연차 신청서, 반차 신청서) 양식이 있어. 해당 양식과 관련된 질문이 들어오면 결재를 통해 기안 올릴 수 있다고 설명해줘.<br>
         		결재 url : http://localhost:8080/approval/myRequestedApprovals
         		요청한 결재 url : http://localhost:8080/approval/myRequestedApprovals
         		작성 문서 url : http://localhost:8080/approval/myRequestedApprovals
