@@ -133,8 +133,10 @@ public class ApprovalPdfController {
 
 	    HttpEntity<Map<String, String>> entity = new HttpEntity<>(body, headers);
 	    ResponseEntity<byte[]> response = restTemplate.postForEntity(
+	    		// 로컬용 url
 //	    		"http://pdf-server:3001/generate-pdf", entity, byte[].class
-	    		"http://localhost:3001/generate-pdf", entity, byte[].class
+	    		// 도커용 url, docker-compose.yml에서 pdf-generator 컨테이너의 이름을 사용
+	    		"http://pdf-generator:3001/generate-pdf", entity, byte[].class
 	    );
 	    
 	    return ResponseEntity.ok()
