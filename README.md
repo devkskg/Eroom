@@ -6,7 +6,7 @@
 ---
 ## 🚀 배포 주소
 
-- **Eroom 그룹웨어**: https://e411-59-14-65-221.ngrok-free.app
+- **Eroom 그룹웨어**: https://bailey-beings-promising-animal.trycloudflare.com
 - **접속 가능 시간**: 매일 10:00 ~ 18:00 (ngrok 주소 주기적 변경됨)
 
 ---
