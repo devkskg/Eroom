@@ -8,6 +8,7 @@
 
 - **Eroom 그룹웨어**: https://compression-download-implies-forest.trycloudflare.com
 - **접속 가능 시간**: 매일 10:00 ~ 18:00 (주소 주기적 변경됨)
+- **점검 시간** :  5월 31일(토) 13:00 ~ 18:00
 
 ---
 
