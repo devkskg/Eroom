@@ -6,7 +6,7 @@
 ---
 ## 🚀 배포 주소
 
-- **Eroom 그룹웨어**: https://slow-queens-print-chapel.trycloudflare.com
+- **Eroom 그룹웨어**: https://pam-namespace-body-researchers.trycloudflare.com
 - **접속 가능 시간**: 평일 10:00 ~ 18:00 (주소 주기적 변경됨)
 
 ---
