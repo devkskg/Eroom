@@ -4,10 +4,12 @@
 총 **14개의 통합 메뉴 + 로그인 시스템 + 관리자 기능**을 제공합니다.
 
 ---
-## 🚀 배포 주소
 
-- **Eroom 그룹웨어**: https://promised-thoughts-alarm-misc.trycloudflare.com
-- **접속 가능 시간**: 평일 10:00 ~ 18:00 (주소 주기적 변경됨)
+## 🚀 배포 주소 (배포 종료)
+
+- 임시 배포는 취업 준비 용도로 운영되었으며, 현재는 업데이트하지 않습니다.
+- 프로젝트 시연은 아래 영상을 통해 확인할 수 있습니다.
+- 프로젝트 시연 영상 바로가기 : [![YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube&logoColor=white)](https://youtu.be/o4tw_cl9vzc)
 
 ---
 
