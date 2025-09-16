@@ -5,9 +5,10 @@
 
 ---
 
-## 🚀 배포 주소 (배포 종료)
+## 🚀 배포 주소 
 
-- 임시 배포는 취업 준비 용도로 운영되었으며, 현재는 업데이트하지 않습니다.
+- 배포 주소 : https://edinburgh-promised-virtue-filing.trycloudflare.com
+- 서버 운영 시간 : 08:00 ~ 18:00
 - 프로젝트 시연은 아래 영상을 통해 확인할 수 있습니다.
 - 프로젝트 시연 영상 바로가기 : [![YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube&logoColor=white)](https://youtu.be/o4tw_cl9vzc)
 
