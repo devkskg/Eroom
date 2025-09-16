@@ -16,5 +16,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
         // 프로필 이미지
         registry.addResourceHandler("/files/profile/**")
                 .addResourceLocations("file:///C:/dev/eroom/upload/profile/");
+        // 프로필 이미지 보완
+        registry.addResourceHandler("/upload/profile/**")
+        .addResourceLocations("file:///C:/dev/eroom/upload/profile/");
+
     }
 }
