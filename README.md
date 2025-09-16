@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 배포 주소 
+## 🚀 배포 주소
 
 - 배포 주소 : https://edinburgh-promised-virtue-filing.trycloudflare.com
 - 서버 운영 시간 : 08:00 ~ 18:00
